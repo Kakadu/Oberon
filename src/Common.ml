@@ -68,7 +68,7 @@ let pseq   a     = vboxed   (listBySemicolonBreak a)
 let vert   a     = vboxed   (listByBreak a)
 let hov    a     = hovboxed (listBySpaceBreak a)  
 
-open Checked 
+open Checked
 
 let resolveDecls f t =
   let m, c = List.fold_left 

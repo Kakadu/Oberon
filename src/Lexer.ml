@@ -1,7 +1,7 @@
 open Ostap
 open String
 open Printf
-open Str
+open Re_str
 open Ostap.Matcher
 
 let identRegexp = "[a-zA-Z]\([a-zA-Z0-9]\)*\\b" 
@@ -16,4 +16,3 @@ class t s =
     method getIDENT     = self#get "identifier" ident
     method getLITERAL   = self#get "literal"    literal         
   end
-  

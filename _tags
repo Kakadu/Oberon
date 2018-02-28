@@ -1,0 +1,22 @@
+true: debug, rectypes
+
+<src/SimpleExpression.*> or <src/L1.*>: syntax(camlp5o), package(GT.syntax.all, ostap.syntax)щ
+<src/Lexer.*>: package(re)
+<src/Monad.*> or <src/Common.*>  or <src/Lexer.*> or <src/Driver.*>: syntax(camlp5o), package(ostap.syntax)
+<src/ConstDecl.*>: syntax(camlp5o), package(ostap.syntax)
+<src/SimpleStatement.*> or  <src/SimpleExpression.*> or <src/PrimitiveType.*> or <src/Module.*> or <src/TypeDecl.*> or <src/VarDecl.*>: syntax(camlp5o), package(ostap.syntax)
+
+<camlp5/pa_minikanren.*>: syntax(camlp5o), package(camlp5)
+
+<src/MiniKanren.*>: syntax(camlp5o),package(GT,GT.syntax.all)
+
+<regression/orig/*>: traverse
+<regression/test*.native> or <regression/test*.byte>: package(str)
+#<regression/test003.ml>: use_pa_minikanren
+
+
+<regression/test0*.*>: package(GT,logger.syntax), syntax(camlp5o)
+#<regression/test004.ml> or <regression/test009.ml> or <regression/test005.ml> or <regression/test000.ml> : use_pa_minkanren
+#<regression/test004.*>: 
+<regression/test014.*> or <regression/test013.*> or <regression/test012.*> or <regression/test011.*> or <regression/test010.*> or <regression/test009.*> or <regression/test007.*> or <regression/test006.*> or <regression/test005.*> or <regression/test004.*> or <regression/test003.*>: use_pa_minikanren, package(GT.syntax.all)
+
