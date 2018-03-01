@@ -1,6 +1,7 @@
 true: debug, rectypes
 
-<src/SimpleExpression.*> or <src/L1.*>: syntax(camlp5o), package(GT.syntax.all, ostap.syntax)щ
+<src/Driver.native>: package(re,str,GT,ostap)
+<src/SimpleExpression.*> or <src/L1.*>: syntax(camlp5o), package(GT.syntax.all, ostap.syntax)
 <src/Lexer.*>: package(re)
 <src/Monad.*> or <src/Common.*>  or <src/Lexer.*> or <src/Driver.*>: syntax(camlp5o), package(ostap.syntax)
 <src/ConstDecl.*>: syntax(camlp5o), package(ostap.syntax)
